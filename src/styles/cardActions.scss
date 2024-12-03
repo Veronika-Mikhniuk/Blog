@@ -1,0 +1,54 @@
+.card__actions {
+    display: flex;
+    justify-content: space-between;
+    
+    .card__rating {
+        display: flex;
+        gap: 16px;
+
+        .card__likes, .card__dislikes {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+
+            img {
+                width: 17px;
+                height: 19px;
+                transition: transform 0.3s ease, fill 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+    }
+
+    .card__tools {
+        display: flex;
+        gap: 16px;
+
+        :first-child {
+            width: 15px;
+            height: 19px;
+        }
+        :last-child {
+            width: 24px;
+            height: 24px;
+        }
+
+        img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

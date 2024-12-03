@@ -1,0 +1,14 @@
+.nav-tabs { 
+    width: 100%;
+}
+.nav-link {
+    color: #2231AA   !important;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.active-tab {
+    color: white !important;
+    background-color: #2231AA;
+    font-weight: 200;
+}

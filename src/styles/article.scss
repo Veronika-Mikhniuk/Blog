@@ -1,0 +1,41 @@
+.article {
+    max-width: 992px;
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    &__text {
+        padding: 30px 20px;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__likes {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__like,
+    &__dislike,
+    &__favourite {
+        background-color: #E8E8E8;
+        padding: 15px 30px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    &__favourite {
+        display: flex;
+        gap: 10px;
+        max-width: max-content;
+    }
+
+}

@@ -1,0 +1,51 @@
+.form__button {
+    border-radius: 2px;
+    margin-bottom: 10px;
+    border: none;
+    transition: all 0.2s ease;
+
+    // Size modificators
+    &_small {
+        height: 46px;
+        width: 120px;
+        padding: 8px 16px;
+    }
+
+    &_large {
+        height: 46px;
+        width: 100%;
+        padding: 12px 24px;
+    }
+
+    // Color modificators
+    &_primary {
+        background-color: rgb(34, 49, 170);
+        color: white;
+
+        &:hover {
+            background-color: rgba(34, 49, 170, 0.889);
+            color: white;
+        }
+
+        &:active {
+            background-color: rgb(34, 49, 170);
+            color: white;
+            transform: scale(0.95);
+        }
+    }
+
+    &_secondary {
+        background-color: rgba(232, 232, 232, 1);
+        color: rgb(37, 37, 37);
+        font-weight: 500;
+
+        &:hover {
+            background-color: rgba(232, 232, 232, 0.889);
+        }
+
+        &:active {
+            background-color: rgba(232, 232, 232, 1);
+            transform: scale(0.95);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.form-control {
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    height: 46px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-control[type="file"] {
+    padding: 8px 02px;
+
+    &::file-selector-button {
+        background-color: rgba(232, 232, 232, 1);
+        height: 42px;
+        color: #252525;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 2px;
+        margin-right: 16px;
+        margin-left: 0px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background: rgba(232, 232, 232, 0.889);
+        }
+    }
+}

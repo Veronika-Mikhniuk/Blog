@@ -1,0 +1,132 @@
+.card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+    &_large {
+        max-width: 736px; 
+        width: 100%;
+        gap: 33px;
+    }
+
+    &_medium {
+        max-width: 352px;
+        gap: 34px;
+    }
+
+    &_small {
+        width: 352px;
+        gap: 32.5px;
+    }
+
+    &__body {
+        display: flex;
+
+        &_large {
+            gap: 32px;
+        }
+
+        &_medium {
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &_small {
+            gap: 34px;
+            max-width: 352px;
+        }
+    }
+
+    &__content {
+        max-width: 448px;
+        width: 100%;
+    }
+
+    &__date {
+        color: #8D8E97;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        color: #313037;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        margin-bottom: 0;
+
+        &_large {
+            height: 132px;
+            font-weight: 700;
+            line-height: 44px;
+            -webkit-line-clamp: 3;
+        }
+
+        &_medium {
+            height: 56px;
+            max-width: 352px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
+            -webkit-line-clamp: 2;
+        }
+
+        &_small {
+            height: 84px;
+            max-width: 222px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
+            -webkit-line-clamp: 3;
+        }
+    }
+
+    &__text {
+        color: #8D8E97;
+        height: 174px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 7;
+        margin: 23px 0 0;
+    }
+
+    &__image {
+        cursor: pointer;
+
+        &_large {
+            width: 256px;
+            height: 244px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &_medium {
+            width: 352px;
+            height: 246px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &_small {
+            width: 96px;
+            height: 96px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__devider {
+        height: 1px;
+        background-color: #8d8e977a;
+    }
+}
+
+.card__body_small {
+    max-width: 352px;
+    width: 100%;
+    flex-shrink: 0;
+}

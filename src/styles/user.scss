@@ -1,0 +1,28 @@
+.user {
+    font-family: 'Arial', 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    width: max-content;
+    height: 60px;
+    padding: 10px 0;
+    gap: 10px;
+    border-radius: 2px;
+    
+
+    &__initials {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #5362c9;
+        color: #ffffff;
+        border-radius: 2px;
+    }
+    &__name {
+        font-size: 1rem;
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+}
